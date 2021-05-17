@@ -39,6 +39,7 @@ class BotHandlerMixin:
 
 
 class TelegramBot(BotHandlerMixin, Bottle):
+    BOT_URL = 'https://api.telegram.org/bot1677568388:AAEnES2vnP4Oi_BcwS1kELVZSTPjlls_s5k/'
 
     def __init__(self, *args, **kwargs):
         super(TelegramBot, self).__init__()
@@ -55,8 +56,6 @@ class TelegramBot(BotHandlerMixin, Bottle):
             answer = greeting_message
         else:
             answer = therapist.respond(message)
-            print(answer)
-            answer.encode(encoding='UTF-8', errors='strict')
         chat_id = self.get_chat_id(data)
         json_data = {
             "chat_id": chat_id,
