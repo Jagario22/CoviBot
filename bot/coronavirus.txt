@@ -1,0 +1,281 @@
+initial: Hi! What do you want to know about COVID-19?.
+final: Goodbye! Keep distance and wash hands. I wish you, your teams, and the health and safety of your loved ones. Hope it was a useful talk for you.
+quit: bye
+quit: goodbye
+quit: quit
+post: am are
+post: your my
+post: me you
+post: myself yourself
+post: yourself myself
+post: i you
+post: you I
+post: my your
+post: i'm you are
+pre: dont don't
+pre: cant can't
+pre: wont won't
+synon: sanitizer sanitizers
+synon: can should 
+synon: result results
+synon: problem problems affects affect
+synon: mask masks
+synon: COVID-19 coronavirus
+key: xnone
+  decomp: *
+    reasmb: Sorry, I cant understand your answer. Please, rephrase it.
+    reasmb: What do you mean?
+    reasmb: Could you change your sentance?
+    reasmb: I'm not sure I understand you fully.
+    reasmb: Can you reformulate the proposal?
+key: coronavirus
+  decomp: what is *
+    reasmb: Coronaviruses are a large family of viruses which may cause illness in animals or humans.There are many different kinds, and some cause disease. A coronavirus identified in 2019, SARS-CoV-2, has caused a pandemic of respiratory illness, called COVID-19. This virus is very dangerous, because  It can affect your upper respiratory tract (sinuses, nose, and throat) or lower respiratory tract (windpipe and lungs) and spreads very quickly.
+  decomp: worry about *
+    reasmb: Illness due to COVID-19 infection is generally mild, especially for children and young adults. However, it can cause serious illness - about 1 in every 5 people who catch it need hospital care. It is therefore quite normal for people to worry about how the COVID-19 outbreak will affect them and their loved ones.We can channel our concerns into actions to protect ourselves, our loved ones and our communities. First and foremost among these actions is regular and thorough hand-washing and good respiratory hygiene. Secondly, keep informed and follow the advice of the local health authorities including any restrictions put in place on travel, movement and gatherings. 
+  decomp: do I have *
+    reasmb: goto symptoms
+  decomp: do i have *
+    reasmb: goto symptoms
+  decomp: * causes death *
+    reasmb: As of May 14, 2021, 3,346,827 deaths have been attributed to COVID-19. This information comes from the Coronavirus COVID-19 Global Cases map developed by the Johns Hopkins Center for Systems Science and Engineering.
+  decomp: why is it called *
+    reasmb: Coronaviruses are named for their appearance - corona means crown. The virus s outer layers are covered with spike proteins that surround them like a crown.
+  decomp: how serious *
+    reasmb: In the majority of the cases i.e. 80% will exhibit mild symptoms, 14% will have pneumonia, 5% will suffer from septic shock and organ failure (mostly respiratory failure) and in 2% cases it will be fatal.
+  decomp: * twice *
+    reasmb: There is currently no conclusive evidence that points to how long coronavirus immunity lasts. According to the Centers for Disease Control and Prevention (CDC), there have been a few recorded cases of coronavirus reinfection, but they remain rare.
+  decomp: * cause *
+    reasmb: While COVID-19 is spreading rapidly, most people will experience only mild or moderate symptoms. That said, this coronavirus can cause severe disease in some people. 
+  decomp: * someone has *
+    reasmb: The virus can be in someone’s body for up to 14 days before they get symptoms, and some people will have such a mild case of COVID-19 that they might not notice anything is wrong. That’s why it’s important that everyone follows their government’s advice even if they feel healthy.
+  decomp: * likely catch *
+    reasmb: The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding there. For most people in most locations, the risk of catching COVID-19 is still low. However, there are now places around the world (cities or areas) where the disease is spreading. For people living in, or visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce your risk of catching or spreading COVID-19.COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other countries. Unfortunately, new outbreaks can emerge rapidly. ItвЂ™s important to be aware of the situation where you are or intend to go. WHO publishes daily updates on the COVID-19 situation worldwide.
+  decomp: coronavirus
+    reasmb: Yes, we speak about coronavirus. Clarify what you want about COVID-19 - about symptoms, ways of protection, tips or statistics.
+key: COVID19
+  decomp: *
+    reasmb: goto coronavirus
+key: covid
+  decomp: *
+    reasmb: goto coronavirus
+key: covid19
+  decomp: *
+    reasmb: goto coronavirus
+key: help
+  decomp: * i help *
+    reasmb: If you want to help (2) first of all dont forget about your safety. Also, the best way to help is to schedule an appointment with the doctor, if the patient isn’t in a critical state and to call the ambulance otherwise. During waiting for the doctor’s visit you can apply symptomatic treatment and after meeting follow recommendations.
+ decomp: * need * 
+    reasmb: Don’t hesitate to seek professional help if you think you need it. A good place to start is your local health worker. Help-lines can also be a source of support.
+ decomp: need * 
+    reasmb: Don’t hesitate to seek professional help if you think you need it. A good place to start is your local health worker. Help-lines can also be a source of support.
+key: protect
+  decomp: *
+    reasmb: To protect yourself and the people around you don’t forget to wear a mask and gloves in public places or near the sick person. Don’t touch your nose and eyes with your hands. Once more you need to know that vaccines become safer and more efficient and available so you can refer to your local department of health care.
+key: save
+  decomp: *
+    reasmb: goto protect
+key: handwash
+  decomp: *
+    reasmb: goto hands
+key: hands
+  decomp: * wash *
+    reasmb: Wet your hands with clean, running water (warm or cold), turn off the tap, and apply soap. Lather your hands by rubbing them together with the soap. Lather the backs of your hands, between your fingers, and under your nails. Scrub your hands for at least 20 seconds. Need a timer? Hum the “Happy Birthday” song from beginning to end twice. Rinse your hands well under clean, running water. Dry your hands using a clean towel or air dry them.
+  decomp: * touch *
+    reasmb: There is recommendation not to touch the face with dirty hands because you can transfer the COVID-19 or other diseases.
+key: sanitizier
+  decomp: *
+    reasmb: Washing hands with soap and water is the best way to get rid of germs in most situations. If soap and water are not readily available, you can use an alcohol-based sanitizer that contains at least 60% alcohol. You can tell if the sanitizer contains at least 60% alcohol by looking at the product label.
+key: hello
+  decomp: *
+    reasmb: Hello. You can ask me questions about coronavirus.
+    reasmb: Hi. Shall I help you with learning something new about COVID-19?
+    reasmb: We already greeted each other.
+key: hi
+  decomp: *
+    reasmb: goto hello
+key:  incubation
+  decomp: *
+    reasmb: The incubation period is the number of days between when you're infected with something and when you might see symptoms. It's different for every condition. The incubation period for children is the same as for adults. The time between exposure to COVID-19 and when symptoms start is commonly around 5 to 6 days and ranges from 1 to 14 days.
+key: contagious
+  decomp: *
+    reasmb: goto incubation
+key: isolation 
+ decomp: *
+    reasmb: If you have been exposed to someone with COVID-19 or you have recently travelled to a country or region with the widespread transmission have been advised to self-quarantine for 14 days from the time of last possible exposure.
+key: isolating 
+ decomp: *
+    reasmb: goto isolation
+key: isolate 
+ decomp: *
+    reasmb: goto isolation
+key: symptoms
+  decomp: *
+     reasmb: The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention. If you have a fever or any of the symptoms listed above, call your doctor or a health care provider and explain your symptoms over the phone before going to the doctor’s office, urgent care facility or emergency room and stay home. 
+key: spread
+  decomp: *
+    reasmb: It’s not really hard for COVID-19. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. These droplets land on objects and surfaces around the person. Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose, or mouth. People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets. This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick!
+key: spreads
+  decomp: *
+    reasmb: goto spread
+key: spreading  
+  decomp: *
+    reasmb: goto spread
+key: transmitted
+  decomp: *
+    reasmb: goto spread 
+key: diagnosed
+  decomp: how *
+    reasmb: Actually, COVID-19 is diagnosed through a laboratory test. Diagnosis by examination alone is difficult since many COVID-19 signs and symptoms can be caused by other illnesses. Some people with the coronavirus do not have symptoms at all. Learn more about COVID-19 testing.
+key: tests
+  decomp: * types *
+    reasmb: 1) Viral or diagnostic test.A viral test can tell you if you are currently infected with the coronavirus that causes COVID-19.  2) Antibody test. An antibody test can show if you were previously exposed to or infected with the virus that causes COVID-19, and if your body has created antibodies in an attempt to defend itself. It takes at least 12 days after exposure for your body to make enough antibodies to show up on a test.
+  decomp: who should get *
+    reasmb: The answer varies based on many factors including a person’s symptoms, exposure history, and underlying risk factors for severe disease.
+  decomp: where *
+    reasmb: Contact your healthcare provider or visit your state, tribal, local external icon, and territorial health department’s website to find the latest local information on testing. The type of viral COVID-19 tests offered may differ by location. You and your healthcare provider might also consider either an at-home collection kit or an at-home test if you have signs and symptoms of COVID-19 and if you can’t get tested by a healthcare provider or public health official.
+  decomp: who @should get *
+    reasmb: People who have symptoms of COVID-19. Most people have had close contact (within 6 feet for a total of 15 minutes or more over a 24-hour period) with someone with confirmed COVID-19.
+  decomp: @should I *
+    reasmb: You should get tested if you have symptoms of COVID-19  and if you have had close contact (within 6 feet for a total of 15 minutes or more over a 24-hour period) with someone with confirmed COVID-19.
+  decomp: when i @should *
+    reasmb: You should get tested if you have symptoms of COVID-19  and if you  have had close contact (within 6 feet for a total of 15 minutes or more over a 24-hour period) with someone with confirmed COVID-19. 
+key: test
+  decomp: *
+    reasmb: goto tests    
+key: tested
+  decomp: *
+    reasmb: goto tests
+  decomp: * @result * 
+    reasmb: If you test positive, know what protective steps to take to prevent others from getting sick. If you test negative, you probably were not infected at the time your sample was collected. The test result only means that you did not have COVID-19 at the time of testing. Continue to take steps to protect yourself. Getting a negative test result means it is unlikely you were infected with the new coronavirus when your test sample was taken. But if you are tested when you are in the earliest stages of infection, before the virus is detectable, you might still be infected despite having a negative test result.
+  decomp: how long * 
+    reasmb: Getting coronavirus test results can take anywhere from an hour to several days.
+key: vaccines
+  decomp: *  types *
+    reasmb: There are four types of vaccines in clinical trials - whole virus, protein subunit, viral vector, and nucleic acid (RNA and DNA), each of which protects people, but by producing immunity in a slightly different way.
+  decomp: * save * 
+    reasmb: Despite the record speed at which they have been developed, COVID-19 vaccines have still been subject to the same checks, balances, and scientific and regulatory rigour as any other vaccine, and shown to be safe. 
+  decomp: how we get *
+    reasmb: An unprecedented combination of political will, global collaboration and funding have enabled the rapid development of COVID-19 vaccines, without compromising vaccine safety.
+  decomp: who can't have * 
+    reasmb: The currently available coronavirus vaccines have been demonstrated to be safe for adults of various ages, as well as those with chronic health conditions. But there are a few groups who should avoid being vaccinated for now.
+key: vaccine
+  decomp: *
+    reasmb: goto vaccines
+key: treatment
+  decomp: * 
+    reasmb: Treatment for COVID-19 addresses the signs and symptoms of the infection and supports people with more severe disease. For mild cases of coronavirus disease, your doctor may recommend measures such as fever reducers or over-the-counter medications. Scientists around the world are working to find and develop treatments for COVID-19. Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill. Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness. it does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. 
+key: cure 
+  decomp: *
+    reasmb: goto treatment
+key: curing
+  decomp: *
+    reasmb: goto treatment
+key: preventing
+  decomp: *
+    reasmb: goto treatment.
+key: antibiotics 
+  decomp: *
+    reasmb: Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection.
+key: medicines
+  decomp: goto treatment
+key: medicine
+  decomp: goto treatment
+key: recover
+  decomp: * immune * 
+    reasmb: Generally, when you recover from a virus, your immune system has cells in the body that "remember" it, and antibodies help fight it off the next time it gets into your system, making you immune. But there's a lot that still isn't known about immunity to COVID-19. Doctors have found antibodies in patients who have recovered from the virus, but there are still some questions about how long that immunity may last.
+  decomp: how long * 
+    reasmb: Recovery from COVID-19 can be slow, health experts say, and there are varying reports of how long people with the virus feel sick. Some people have reported feeling sick for 10 days or more. Other health experts say people are sick on average for seven days after symptoms begin.
+  decomp: * @problems * 
+    reasmb: People can have problems with organ damage (heart, lungs, brain),  blood clots and blood vessels, with mood and fatigue during their recovery.
+key: recovery
+  decomp: * immune * 
+    reasmb: goto recover
+key: contagious
+  decomp: * 
+    reasmb: The novel coronavirus, which causes the disease COVID-19, is highly contagious. Health experts don't know how long a person is contagious once they test positive for the virus. One study in Germany found that people were at a low risk of being contagious 10 days after they started feeling sick. Another study of people in China found that the virus could stay in the body for a week to 37 days. But the presence of the virus in the body doesn't necessarily mean a person is contagious.
+key: pandemic
+  decomp: * end * 
+  reasmb: Historians of medicine know that pandemics and epidemics are social phenomena. As a result, their endings happen in two ways. There is the medical conclusion of a pandemic, when disease incidence goes down and death rates plummet. But there is also the social end, when fear of the infection decreases and social restrictions ease. Crucially, you can have one without the other. The rates of coronavirus might go down, fewer people will be hospitalised and die, people’s anxieties could ease, and life could return to normal – in that order. Or rates could stay the same, but people just get sick and tired of restrictions and launch themselves into the parties they had planned, regardless. Or rates could go down, but people remain fearful – anxious about returning to “normal life” and unable to let go of some of the precautions we have become accustomed to.
+  decomp: * started * 
+  reasmb: The virus was first identified in December 2019 in Wuhan, China. The World Health Organization declared a Public Health Emergency of International Concern regarding COVID-19 on 30 January 2020, and later declared a pandemic on 11 March 2020. As of 15 May 2021, more than 161 million cases have been confirmed, with more than 3.35 million deaths attributed to COVID-19, making it one of the deadliest pandemics in history.
+  decomp: * result * 
+  reasmb: The pandemic has resulted in significant global social and economic disruption, including the largest global recession since the Great Depression.[10] It has led to widespread supply shortages exacerbated by panic buying, agricultural disruption, and food shortages. However, there have also been decreased emissions of pollutants and greenhouse gases. Numerous educational institutions and public areas have been partially or fully closed, and many events have been cancelled or postponed. Misinformation has circulated through social media and mass media. The pandemic has raised issues of racial and geographic discrimination, health equity, and the balance between public health imperatives and individual rights.
+  decomp: * stay active *
+  reasmb: Try and reduce long periods of time spent sitting, whether for work, studying, watching TV, reading, or using social media or playing games using screens. Reduce sitting for long periods by taking short 3-5 minute breaks every 20-30 minutes. Simply stand up and stretch or even better, take a walk around the house, up and down the stairs, or into the garden. By just moving around and stretching you can improve your health and wellbeing.
+key: prevent 
+  decomp:  * 
+   reasmb: To prevent the spread of COVID-19 - clean your hands often. Use soap and water, or an alcohol-based hand rub. Maintain a safe distance from anyone who is coughing or sneezing. Wear a mask when physical distancing is not possible. Don’t touch your eyes, nose or mouth. Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze. Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention.Calling in advance allows your healthcare provider to quickly direct you to the right health facility. This protects you, and prevents the spread of viruses and other infections. Masks can help prevent the spread of the virus from the person wearing the mask to others. Masks alone do not protect against COVID-19, and should be combined with physical distancing and hand hygiene. Follow the advice provided by your local health authority.
+key: risk
+ decomp: who * 
+  reasmb:  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.
+ decomp: * prevent * 
+  reasmb: goto prevent
+ decomp: * crowded * 
+  reasmb: The risks of getting COVID-19 are higher in crowded and inadequately ventilated spaces where infected people spend long periods of time together in close proximity. These environments are where the virus appears to spread by respiratory droplets or aerosols more efficiently, so taking precautions is even more important.
+key: masks
+ decomp: * 
+  reasmb: Face coverings limit the volume and travel distance of expiratory droplets dispersed when talking, breathing, and coughing. A face covering without vents or holes will also filter out particles containing the virus from inhaled and exhaled air, reducing the chances of infection. Medical masks and respirator masks are similar in their protection value. However, respirators are specific for certain procedures and instances because they have a tightly fitted component to them. Respirator masks are designed to protect healthcare workers who provide care to COVID-19 patients in settings and areas where aerosol generating procedures are undertaken. Healthcare workers should be fit tested before using a respirator to ensure that they are wearing the correct size.
+key: mask 
+ decomp: * 
+  reasmb: goto masks
+key: seasonable 
+ decomp: * 
+  reasmb: There is currently no conclusive evidence that either weather (short-term variations in meteorological conditions) or climate (long-term averages) have a strong influence on transmission. From the evidence so far, the COVID-19 virus can be transmitted in ALL AREAS, including areas with hot and humid weather. Regardless of climate, adopt protective measures if you live in, or travel to an area reporting COVID-19. The best way to protect yourself against COVID-19 is by frequently cleaning your hands. By doing this you eliminate viruses that may be on your hands and avoid infection that could occur by then touching your eyes, mouth, and nose.
+key: climate
+ decomp: * 
+  reasmb: goto seasonable 
+key: climates
+ decomp: * 
+  reasmb: goto seasonable 
+key: seasonality
+ decomp: * 
+  reasmb: goto seasonable 
+key: seasonal
+ decomp: * 
+  reasmb: goto seasonable 
+key: travel 
+ decomp: * 
+  reasmb: Delay travel until you are fully vaccinated. Fully vaccinated travelers are less likely to get and spread COVID-19. People who are fully vaccinated with an FDA-authorized vaccine or a vaccine authorized for emergency use by the World Health Organization can travel safely within the United States - Fully vaccinated travelers do not need to get tested before or after travel unless their destination requires it; Fully vaccinated travelers do not need to self-quarantine; Fully vaccinated travelers should still follow CDC’s recommendations for traveling safely including - Wear a mask over your nose and mouth; Stay 6 feet from others and avoid crowds; Wash your hands often or use hand sanitizer;
+key: mutate 
+ decomp: * 
+  reasmb: Mutations can show how the virus is evolving. These so-called neutral mutations may not be useful for the virus, but they can be useful to the scientists who are investigating it. They can act as a trail of breadcrumbs that provide information about how the virus originated and how it is spreading on a global and local level. The COVID-19 virus may mutate more slowly than flu.  Also, mutations are impossible to predict. By their very nature mutations are a random event, and so predicting when and where they will occur and the impact this might have is a very difficult task. However, monitoring their spread is not just important for understanding how changes in the virus could alter its lethality or transmissibility, but also how they could affect the tools we are developing in response.
+key: mutates 
+ decomp: * 
+  reasmb: goto mutate
+key: tips
+  decomp: *
+    reasmb: goto tip
+key: advice
+  decomp: *
+    reasmb: goto tip
+key: advices
+  decomp: *
+    reasmb: goto tip
+key: tip
+  decomp: *
+    reasmb: Practice good hand hygiene.
+  reasmb: Wash your hands often with soap and water or use an alcohol-based hand sanitizer.
+    reasmb: Keep a safe distance from people who sneeze or cough.
+    reasmb: Wear a mask when surrounded by other people.
+    reasmb: Do not touch your eyes, mouth, or nose with your hands.
+   reasmb: Cover your mouth and nose with an elbow fold or handkerchief when coughing or sneezing.
+    reasmb: If you feel unwell, stay at home. Seek medical attention if you have a fever, cough, or shortness of breath.
+key: statistics
+  decomp:*
+    reasmb: goto statistic
+key: statistic
+  decomp: *
+    reasmb: If you want to get familiar with the official statistic about COVID-19 you can visit the site of the World Health Organization - covid19.who.int/
+key: people
+  decomp: *@sick*
+    reasmb: Official statistics about how many people are getting sick are being updated regularly. If you want to see reliable information about COVID-19, you can visit the official site of the World Health Organization - covid19.who.int/
+key: spread
+  decomp: *
+    reasmb: goto spread
+key: spreads
+  decomp: * countries *
+    reasmb: As for official statistics you can find sick people in almost every country (some of them don’t share the information). The most latest information can be found on the World Health Organization’s site - covid19.who.int/
+key: history
+  decomp: * history of @COVID-19 *
+    reasmb: On 31 December 2019, the World Health Organization (WHO) was formally notified about a cluster of cases of pneumonia in Wuhan City, home to 11 million people and the cultural and economic hub of central China. By 5 January, 59 cases were known and none had been fatal. Ten days later, WHO was aware of 282 confirmed cases, of which four were in Japan, South Korea, and Thailand. There had been six deaths in Wuhan, 51 people were severely ill and 12 were in a critical condition. The virus responsible was isolated on 7 January and its genome shared on 12 January. The cause of the severe acute respiratory syndrome that became known as COVID‐19 was a novel coronavirus, SARS‐CoV‐2. The rest is history, albeit a history that is constantly being rewritten as of 12 May, 82,591 new cases of COVID‐19 worldwide were being confirmed daily and the death rate was over 4200 per day.
