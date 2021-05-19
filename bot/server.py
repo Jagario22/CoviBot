@@ -39,6 +39,7 @@ class BotHandlerMixin:
 
 
 class TelegramBot(BotHandlerMixin, Bottle):
+    BOT_URL = 'https://api.telegram.org/bot1677568388:AAHG42DcikfzG9u04gDmdh7trUpRLnVqN_c/'
 
     def __init__(self, *args, **kwargs):
         super(TelegramBot, self).__init__()
@@ -53,6 +54,8 @@ class TelegramBot(BotHandlerMixin, Bottle):
     def process_command(self, message, data):
         if message == "/start":
             answer = greeting_message
+        elif therapist.respond(message) is None:
+            answer = therapist.final()
         else:
             answer = therapist.respond(message)
         chat_id = self.get_chat_id(data)
